@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenF1</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+
+
+<body>
+    <section>
+        <div class="min-h-screen flex flex-col items-center justify-center" style="background-image: url(/1019514116-LAT-20230305-GP2301_164031_J5A8901_5-1-scaled.jpg); background-size: cover;">
+            <h1 class="text-7xl font-bold bg-gradient-to-r from-orange-600 to-yellow-600 bg-clip-text text-transparent" id="headertext">
+                Loading...
+            </h1>
+            <p class="text-black text-lg" id="headerbottomtext"></p>
+            <div class="flex space-x-4 mt-4">
+                <a href="#drivers" class="btn btn-primary">Drivers</a>
+                <a href="#laps" class="btn btn-primary">Laps</a>
+                <a href="#radiomessage" class="btn btn-primary">Radio Messages</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="drivers" class="mt-20">
+        
+        <div class="min-h-screen flex flex-col items-center justify-center">
+            <h1 class="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent text-5xl font-bold mb-16 mt-2">Drivers</h1>
+            <p class="text-xl text-gray-400 mb-4">The Drivers</p>
+            <div class="grid grid-cols-2 gap-4" id="driverarray">
+            </div>
+        </div>
+    </section>
+
+    <section id="laps" class="mt-20">
+        <div class="min-h-screen flex flex-col items-center justify-center">
+            <h1 class="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent text-5xl font-bold mb-16 mt-2">Laps</h1>
+            <p class="text-xl text-gray-400 mb-4">Driver X leads Lap Y</p>
+            <div class="grid grid-cols-2 gap-4" id="lapsarray">
+            </div>
+        </div>
+    </section>
+
+    <section id="radiomessage" class="mt-20">
+        <div class="min-h-screen flex flex-col items-center justify-center">
+            <h1 class="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent text-5xl font-bold mb-16 mt-2">Radio Messages</h1>
+            <p class="text-xl text-gray-400 mb-4">Every public radio message from the race</p>
+            <div class="grid grid-cols-2 gap-4" id="radiomessagesarray">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer footer-center p-4 bg-base-300 text-base-content mt-20">
+        <aside>
+            <a href="https://support.reversed.dev/?ref=openf1project" class="hover:underline me-4 md:me-6">Support me on my Journey</a>
+        </aside>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
